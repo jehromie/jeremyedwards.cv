@@ -1,0 +1,11 @@
+.next
+node_modules
+.git
+.env.local
+.env
+npm-debug.log
+Dockerfile
+dev.log
+**/node_modules
+.vscode
+.idea
