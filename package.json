@@ -4,11 +4,10 @@
   "description": "Jeremy Edwards CV website with AI chat integration",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "next-dev": "next dev",
-    "next-start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": [
     "cv",
@@ -26,7 +25,6 @@
     "@ai-sdk/openai": "^0.0.66",
     "@langchain/community": "^0.0.53",
     "@langchain/core": "^0.1.17",
-    "@langchain/mongodb": "^1.0.0",
     "@langchain/openai": "^0.0.28",
     "@types/node": "^20.10.0",
     "ai": "^3.0.0",
