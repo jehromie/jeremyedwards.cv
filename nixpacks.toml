@@ -1,12 +1,12 @@
-[providers]
-node = "18"
+providers = ["node"]
+
+[variables]
+NODE_VERSION = "18"
+NODE_ENV = "production"
+NPM_CONFIG_PRODUCTION = "false"
 
 [phases.build]
 cmds = ["npm ci --production=false", "npm run build"]
 
 [phases.start]
 cmd = "npm run start"
-
-[variables]
-NODE_ENV = "production"
-NPM_CONFIG_PRODUCTION = "false"
