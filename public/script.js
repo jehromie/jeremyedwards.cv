@@ -6,6 +6,27 @@ document.addEventListener('DOMContentLoaded', function() {
   initializeCV();
 });
 
+// Also try to initialize when the window loads (Next.js compatibility)
+window.addEventListener('load', function() {
+  console.log('Window loaded - checking if CV needs initialization');
+  
+  // Check if elements exist before initializing
+  const chatInput = document.getElementById('chatInput');
+  if (chatInput && !chatInput.hasAttribute('data-initialized')) {
+    console.log('Initializing CV on window load');
+    initializeCV();
+  }
+});
+
+// Also try immediate execution for Next.js
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeCV);
+} else {
+  // DOM is already loaded
+  console.log('DOM already loaded - initializing immediately');
+  initializeCV();
+}
+
 /**
  * Initialize CV functionality
  */
@@ -258,6 +279,15 @@ function initializeChat() {
     console.log('Chat elements not found, skipping chat initialization');
     return;
   }
+
+  // Check if already initialized
+  if (chatInput.hasAttribute('data-initialized')) {
+    console.log('Chat already initialized, skipping');
+    return;
+  }
+
+  console.log('Initializing chat functionality...');
+  chatInput.setAttribute('data-initialized', 'true');
 
   // Session tracking for question limit
   const QUESTION_LIMIT = 5;

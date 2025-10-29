@@ -4,11 +4,10 @@
   "description": "Jeremy Edwards CV website with AI chat integration",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "next-dev": "next dev",
-    "next-start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": [
     "cv",
