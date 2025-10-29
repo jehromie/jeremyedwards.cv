@@ -4,6 +4,7 @@ providers = ["node"]
 NODE_VERSION = "18"
 NODE_ENV = "production"
 NPM_CONFIG_PRODUCTION = "false"
+HOSTNAME = "0.0.0.0"
 
 [phases.build]
 cmds = ["npm ci --production=false", "npm run build"]
