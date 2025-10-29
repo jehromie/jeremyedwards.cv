@@ -137,3 +137,16 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Test and debug files
+test-*.js
+response*.txt
+debug*.log
+checkDB*.mjs
+testConnection.*
+testMongo.*
+
+# Development scripts (excluding production utilities)
+checkIndexes.mjs
+
+# Keep createEmbeddings.mjs - needed for production database setup

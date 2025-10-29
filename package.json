@@ -1,0 +1,48 @@
+{
+  "name": "jeremyedwards-cv",
+  "version": "1.0.0",
+  "description": "Jeremy Edwards CV website with AI chat integration",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "build": "next build",
+    "next-dev": "next dev",
+    "next-start": "next start"
+  },
+  "keywords": [
+    "cv",
+    "portfolio",
+    "nodejs",
+    "express",
+    "ai",
+    "chat",
+    "mongodb",
+    "langchain"
+  ],
+  "author": "Jeremy Edwards",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.66",
+    "@langchain/community": "^0.0.53",
+    "@langchain/core": "^0.1.17",
+    "@langchain/mongodb": "^1.0.0",
+    "@langchain/openai": "^0.0.28",
+    "@types/node": "^20.10.0",
+    "ai": "^3.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "langchain": "^0.1.25",
+    "mongodb": "^5.9.0",
+    "next": "^14.0.0",
+    "openai": "^4.20.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
